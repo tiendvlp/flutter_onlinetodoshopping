@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>701500203795-r6a0p51hqbvq97h4d746bm7rogep461a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.701500203795-r6a0p51hqbvq97h4d746bm7rogep461a</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>701500203795-7aavljdnj65vsfp28opqid83ion65d53.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAhDJaKn9HUzpo-7aQ4oWiyH2cPudwgTg0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>701500203795</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.devlogs.reso</string>
+	<key>PROJECT_ID</key>
+	<string>shoppingtodolistonline</string>
+	<key>STORAGE_BUCKET</key>
+	<string>shoppingtodolistonline.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:701500203795:ios:aaba494cef6b006072f0e6</string>
+	<key>CFBundleURLTypes</key>
+<array>
+	<dict>
+		<key>CFBundleTypeRole</key>
+		<string>Editor</string>
+		<key>CFBundleURLSchemes</key>
+		<array>
+			<!-- TODO Replace this value: -->
+			<!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
+			<string>com.googleusercontent.apps.701500203795-r6a0p51hqbvq97h4d746bm7rogep461a</string>
+		</array>
+	</dict>
+</array>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "701500203795",
+    "project_id": "shoppingtodolistonline",
+    "storage_bucket": "shoppingtodolistonline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701500203795:android:99528e753542c62072f0e6",
+        "android_client_info": {
+          "package_name": "com.devlogs.reso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701500203795-7aavljdnj65vsfp28opqid83ion65d53.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devlogs.reso",
+            "certificate_hash": "8891d21a5ee65ed8a9af147f300842d32b736829"
+          }
+        },
+        {
+          "client_id": "701500203795-25nftidd0i68g7saarddbkrlj65cqvua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxfA6UQu_YzATtTd0oQ3tMbvSvGeu0Mxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701500203795-25nftidd0i68g7saarddbkrlj65cqvua.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "701500203795-r6a0p51hqbvq97h4d746bm7rogep461a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.devlogs.reso"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
