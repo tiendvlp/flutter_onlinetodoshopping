@@ -27,7 +27,7 @@ DeviceScreenType getDeviceType(MediaQueryData mediaQuery) {
   return DeviceScreenType.Mobile;
 }
 
-Function toast(String message) {
+void toast(String message) {
   Fluttertoast.showToast(
       msg: message,
       toastLength: Toast.LENGTH_LONG,

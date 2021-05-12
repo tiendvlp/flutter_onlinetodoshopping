@@ -5,6 +5,7 @@ import 'package:onlinetodoshipping/screen/common/helper/Helper.dart';
 import 'package:onlinetodoshipping/screen/loginscreen/controller/LoginController.dart';
 import 'package:onlinetodoshipping/screen/loginscreen/listener/LoginPageListener.dart';
 import 'package:onlinetodoshipping/screen/loginscreen/model/LoginPageState.dart';
+import 'package:onlinetodoshipping/screen/mainscreen/controller/MainPage.dart';
 import 'package:provider/provider.dart';
 
 import '../view/LoginPageWidget.dart';
@@ -35,6 +36,7 @@ class _LoginPageState extends State {
             User(email: value.email, name: value.displayName);
         // navigate to mainsreen
         toast("Welcome");
+        MainPage.start(context);
       } else {
         toast("Login Failed");
       }
