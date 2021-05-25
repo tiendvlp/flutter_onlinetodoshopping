@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:onlinetodoshipping/screen/applicationstate/User.dart';
+
+import 'User.dart';
 
 class ApplicationState with ChangeNotifier {
   User _user;

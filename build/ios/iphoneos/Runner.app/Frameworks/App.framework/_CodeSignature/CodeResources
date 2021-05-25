@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		JRejIOYjiQudUwrGAPbCWx0Ullc=
+		0ob/NSmPkwfdobidSy7ZQKv5+GY=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>flutter_assets/NOTICES</key>
 		<data>
-		438RAhA+KWZplFX4WGFxd+hGW34=
+		i46qqMvIfYpZ60ftpu4cqWakK2Q=
 		</data>
 		<key>flutter_assets/assets/fonts/OpenSans-Bold.ttf</key>
 		<data>
@@ -52,6 +52,10 @@
 		<data>
 		UduuRUOqoQCW40Tkj8/+RovTFKk=
 		</data>
+		<key>flutter_assets/assets/image/backgroundimg.png</key>
+		<data>
+		3oc6jcuWYOFtGi4Pl4ykQJV31mo=
+		</data>
 		<key>flutter_assets/assets/image/icon_apple.png</key>
 		<data>
 		tEm2ERA8wnC1VbxCfIBDtpvUN4g=
@@ -74,7 +78,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		b+kVCRCby1gjR54xltrMF8gWybA=
+		SVcKIv9eHCRKvDx5yv7h076tZS4=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -99,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JRejIOYjiQudUwrGAPbCWx0Ullc=
+			0ob/NSmPkwfdobidSy7ZQKv5+GY=
 			</data>
 			<key>hash2</key>
 			<data>
-			HgCQNrDKzOwJXseKoFMdTvvMHy8cuRTeOCB29kT/Vuc=
+			vrCUIMx9B4IYp2dV76j/VO3bumhTxqm0iXmfK9kC9zA=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -121,11 +125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			438RAhA+KWZplFX4WGFxd+hGW34=
+			i46qqMvIfYpZ60ftpu4cqWakK2Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			x9CPTatMiciOvCXYtUL5U4xFm+GnMGQ7Kc1toyG0GHQ=
+			lNgtZ+1Btum/Mcd4BccyEAeZ7HG9FUbF4CGpOZt3meM=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/fonts/OpenSans-Bold.ttf</key>
@@ -216,6 +220,17 @@
 			KDWzWKqqMp+aS7R5NslmhyAsokd0ouHHglGllvKwH6U=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/image/backgroundimg.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3oc6jcuWYOFtGi4Pl4ykQJV31mo=
+			</data>
+			<key>hash2</key>
+			<data>
+			tK9t2LLmLxO3CBbgJDQw7DR084BEdBxBMUtHC4MWpW4=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/image/icon_apple.png</key>
 		<dict>
 			<key>hash</key>
@@ -275,11 +290,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b+kVCRCby1gjR54xltrMF8gWybA=
+			SVcKIv9eHCRKvDx5yv7h076tZS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			uUwHxkgzIGHhMge2mKwdsdrjmyZJ+2Wd8HTmWxnluts=
+			S1yAfgSM/qJkYDrfQVrbugvq+2nJZFpLqPtAcQ/D7+A=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

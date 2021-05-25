@@ -2,15 +2,23 @@ import 'package:flutter/material.dart';
 
 import 'DeviceScreenType.dart';
 
+enum AspectRatioType { LONG, SHORT }
+
 class SizingInformation {
   final Orientation orientation;
   final DeviceScreenType deviceScreenType;
   final Size screenSize;
   final Size localWidgetSize;
-  AspectRatio aspectRatio;
+  AspectRatioType aspectRatioType;
 
   SizingInformation(this.orientation, this.deviceScreenType, this.screenSize,
-      this.localWidgetSize);
+      this.localWidgetSize) {
+    if ((screenSize.height / screenSize.width) > 1.8) {
+      aspectRatioType = AspectRatioType.LONG;
+    } else {
+      aspectRatioType = AspectRatioType.SHORT;
+    }
+  }
 
   @override
   String toString() {

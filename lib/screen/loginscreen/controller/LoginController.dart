@@ -4,7 +4,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 enum SignInWithGoogleResult { Success, Failed }
 
-class LoginController extends StatelessWidget {
+class LoginController {
   Future<User> signInWithGoogle() async {
     final GoogleSignIn ggSignIn = GoogleSignIn();
     final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -34,7 +34,4 @@ class LoginController extends StatelessWidget {
 
     return currentUser;
   }
-
-  @override
-  Widget build(BuildContext context) {}
 }
