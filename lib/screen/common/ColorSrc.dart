@@ -7,6 +7,6 @@ class ColorSrc {
   static const Color red2 = Color(0xffB23F56);
   static const Color pink1 = Color(0xffF5CEB8);
   static const Color pink2 = Color(0xffFF7363);
-  static const Color pink3 = Color(0xffFFF3F1);
+  static const Color pink3 = Color(0xffFFF8F6);
   static const Color darkBlue = Color(0xff38415C);
 }

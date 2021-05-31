@@ -23,7 +23,7 @@ class RoomInfoWidget extends StatelessWidget {
                   height: size.localWidgetSize.height * 0.8),
               SafeArea(
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 35, right: 35),
+                  padding: const EdgeInsets.only(left: 25, right: 25),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [

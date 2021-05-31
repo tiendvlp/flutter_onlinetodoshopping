@@ -1,14 +1,5 @@
-enum RequestType {
-  Where,
-  OpenTime,
-  Price,
-  Count,
-  Title,
-  Deadline,
-  Branch,
-  Type,
-  Others
-}
+import 'package:onlinetodoshipping/entity/RequestType.dart';
+import 'package:onlinetodoshipping/screen/common/helper/Helper.dart';
 
 class RequestProvider {
   List<RequestItem> requests = [
@@ -31,6 +22,6 @@ class RequestItem {
 
   @override
   String toString() {
-    return type.toString().split('.')[1];
+    return getEnumValue(type);
   }
 }

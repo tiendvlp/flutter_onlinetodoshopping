@@ -1,10 +1,11 @@
 import 'package:onlinetodoshipping/domain_interface/TodoListRepository.dart';
+import 'package:onlinetodoshipping/entity/TodoListEntity.dart';
 
 enum GetTodoListResultType { Success, NetworkError, GeneralError }
 
 class GetTodoListResult {
   GetTodoListResultType type;
-
+  List<TodoListEntity> todoLists = [];
   GetTodoListResult(this.type);
 }
 
@@ -16,7 +17,9 @@ class GetTodoListUseCase {
   }
 
   Future<GetTodoListResult> execute(String roomId) async {
-    await _getRoomTodoListRepoAction.execute(roomId);
-    return GetTodoListResult(GetTodoListResultType.Success);
+    final successResult = GetTodoListResult(GetTodoListResultType.Success);
+    successResult.todoLists
+        .addAll(await _getRoomTodoListRepoAction.execute(roomId));
+    return successResult;
   }
 }

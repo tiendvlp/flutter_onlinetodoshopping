@@ -4,10 +4,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:onlinetodoshipping/screen/applicationstate/ApplicationState.dart';
 import 'package:onlinetodoshipping/screen/loginscreen/controller/LoginPage.dart';
-import 'package:onlinetodoshipping/services/RealtimeRoomService.dart';
+import 'package:onlinetodoshipping/servicelocator/locator.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
+  setup();
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   FirebaseFirestore.instance.settings = Settings(persistenceEnabled: true);

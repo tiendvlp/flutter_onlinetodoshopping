@@ -1,4 +1,4 @@
-import 'QuestionEntity.dart';
+import 'RequestType.dart';
 
 class RequestEntity {
   final String id;
@@ -7,7 +7,7 @@ class RequestEntity {
   final String roomName;
   final String todoTitle;
   final int date;
-  final QuestionEntity question;
+  final RequestType question;
   String answer;
 
   RequestEntity(this.id, this.roomId, this.roomName, this.todoId, this.question,

@@ -1,9 +1,9 @@
-import 'package:onlinetodoshipping/entity/QuestionEntity.dart';
+import 'package:onlinetodoshipping/entity/RequestType.dart';
 import 'package:onlinetodoshipping/entity/RequestEntity.dart';
 
 abstract class CreateNewRequestRepoAction {
   Future<void> execute(String roomId, String roomName, String todoId,
-      String todoTitle, QuestionEntity question);
+      String todoTitle, RequestType question);
 }
 
 abstract class RemoveRequestRepoAction {

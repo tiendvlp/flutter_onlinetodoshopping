@@ -1,7 +1,4 @@
 import 'dart:async';
-
-import 'package:onlinetodoshipping/datasource/datamapper/RoomDataMapper.dart';
-import 'package:onlinetodoshipping/datasource/repository/room/GetRoomsRepoActionImp.dart';
 import 'package:onlinetodoshipping/entity/RoomEntity.dart';
 import 'package:onlinetodoshipping/rooms/GetRoomUseCase.dart';
 import 'package:onlinetodoshipping/screen/mainscreen/model/MainPageState.dart';
@@ -12,9 +9,8 @@ class RoomController implements RoomServiceListener {
   GetRoomUseCase _getRoomUseCase;
   MainPageState _mainPageState;
 
-  RoomController(MainPageState mainPageState) {
-    _getRoomUseCase =
-        GetRoomUseCase(GetAllUserRoomsRepoActionImp(RoomDataMapper()));
+  RoomController(MainPageState mainPageState, GetRoomUseCase getRoomUseCase) {
+    _getRoomUseCase = getRoomUseCase;
     _mainPageState = mainPageState;
     RealtimeRoomService.instance.register(this);
   }
@@ -25,10 +21,10 @@ class RoomController implements RoomServiceListener {
     if (result is GetRoomSuccess) {
       // No error
       _mainPageState.loadRoomError = "";
-      _mainPageState.addRooms(result.rooms
-          .map((e) => RoomPresentableModel(
-              e.name, e.id, DateTime.fromMillisecondsSinceEpoch(e.lastUpdate)))
-          .toList());
+      _mainPageState.addRooms(result.rooms.map((e) {
+        return RoomPresentableModel(
+            e.name, e.id, DateTime.fromMillisecondsSinceEpoch(e.lastUpdate));
+      }).toList());
     }
     if (result is GetRoomNetworkError) {
       _mainPageState.loadRoomError =

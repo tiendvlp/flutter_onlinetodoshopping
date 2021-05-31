@@ -2,21 +2,31 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:onlinetodoshipping/screen/common/ColorSrc.dart';
 import 'package:onlinetodoshipping/screen/common/RequestProvider.dart';
+import 'package:onlinetodoshipping/screen/common/helper/Helper.dart';
+import 'package:onlinetodoshipping/screen/todoscreen/model/TodoScreenState.dart';
+import 'package:onlinetodoshipping/screen/widget/ClearableTextField.dart';
+import 'package:provider/provider.dart';
 
 class SelectedRequestWidget extends StatelessWidget {
   final double width;
   final RequestItem request;
+  final Function(String text) onTextChanged;
+  final FocusNode focusNode;
 
-  SelectedRequestWidget({@required this.width, this.request});
+  SelectedRequestWidget(
+      {@required this.width, this.request, this.onTextChanged, this.focusNode});
 
   @override
   Widget build(BuildContext context) {
+    final state = context.read<TodoScreenState>();
+    String defaultText = state.inputForm[getEnumValue(request.type)];
     return Container(
       child: Column(
         children: [
           ...request != null
               ? [
                   Container(
+                    height: 20,
                     width: double.infinity,
                     padding: EdgeInsets.only(left: 25),
                     child: Text(
@@ -38,25 +48,16 @@ class SelectedRequestWidget extends StatelessWidget {
               Container(
                 width: this.width - 50,
                 padding: EdgeInsets.only(left: 20, right: 20),
-                child: Container(
-                    decoration: BoxDecoration(
-                        color: Colors.grey[100],
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: TextField(
-                        minLines: 1,
-                        maxLines: 2,
-                        maxLength: 80,
-                        decoration: InputDecoration(
-                          counterText: "",
-                          hintText: "Aa",
-                          contentPadding: EdgeInsets.only(
-                              left: 20, top: 15, right: 20, bottom: 15),
-                          isDense: true,
-                          border: OutlineInputBorder(
-                              borderSide: BorderSide.none,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                        ))),
+                child: ClearableTextFeild(
+                  focusNode: focusNode,
+                  defaultText: defaultText,
+                  onChanged: this.onTextChanged,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[100],
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                  ),
+                  hint: "Aa",
+                ),
               ),
               Center(
                 child: CupertinoButton(

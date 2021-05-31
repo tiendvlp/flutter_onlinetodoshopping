@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:onlinetodoshipping/screen/common/AspectRatio.dart';
 import 'package:onlinetodoshipping/screen/common/BaseWidget.dart';
 import 'package:onlinetodoshipping/screen/common/ColorSrc.dart';
+import 'package:onlinetodoshipping/screen/common/SizingInformation.dart';
 import 'package:onlinetodoshipping/screen/mainscreen/view/RequestPartWidget.dart';
 import 'package:onlinetodoshipping/screen/mainscreen/view/RoomPartWidget.dart';
 

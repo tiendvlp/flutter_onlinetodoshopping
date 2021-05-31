@@ -9,6 +9,7 @@ import "package:onlinetodoshipping/screen/mainscreen/model/RoomPresentableModel.
 import 'package:onlinetodoshipping/screen/roomscreen/model/RoomPresentableModel.dart';
 import 'package:onlinetodoshipping/screen/mainscreen/view/MainPageWidget.dart';
 import 'package:onlinetodoshipping/screen/roomscreen/constrollers/RoomPage.dart';
+import 'package:onlinetodoshipping/servicelocator/locator.dart';
 import 'package:provider/provider.dart';
 
 class MainPage extends StatefulWidget {
@@ -33,7 +34,7 @@ class _MainPageState extends State<MainPage> implements MainPageListener {
   @override
   void initState() {
     _state = MainPageState();
-    _roomController = RoomController(_state);
+    _roomController = locator.get(param1: _state);
     super.initState();
   }
 

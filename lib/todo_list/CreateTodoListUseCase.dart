@@ -1,10 +1,13 @@
 import 'package:onlinetodoshipping/domain_interface/TodoListRepository.dart';
+import 'package:onlinetodoshipping/entity/TodoListEntity.dart';
 
 enum CreateTodoListResultType { Success, NetworkError, GeneralError }
 
 class CreateTodoListResult {
   final CreateTodoListResultType type;
-  CreateTodoListResult(this.type);
+  final TodoListEntity createdTodoList;
+
+  CreateTodoListResult(this.type, this.createdTodoList);
 }
 
 class CreateTodoListUseCase {
@@ -15,7 +18,9 @@ class CreateTodoListUseCase {
   }
 
   Future<CreateTodoListResult> execute(roomId, String title) async {
-    await _addTodoListRepoAction.execute(roomId, title);
-    return CreateTodoListResult(CreateTodoListResultType.Success);
+    TodoListEntity createdTodoList =
+        await _addTodoListRepoAction.execute(roomId, title);
+    return CreateTodoListResult(
+        CreateTodoListResultType.Success, createdTodoList);
   }
 }

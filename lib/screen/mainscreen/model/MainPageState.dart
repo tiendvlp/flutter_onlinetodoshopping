@@ -13,8 +13,8 @@ class MainPageState with ChangeNotifier {
   RoomPresentableModel _changedRoom = null;
   RoomPresentableModel _removedRoom = null;
   String _loadRoomError = "";
-  List<RoomPresentableModel> get rooms {
-    return [..._currentRooms];
+  SplayTreeSet<RoomPresentableModel> get rooms {
+    return _currentRooms;
   }
 
   void addRooms(List<RoomPresentableModel> rooms) {
